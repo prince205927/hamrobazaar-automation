@@ -1,0 +1,7 @@
+22:42:12.132 [main] DEBUG services.ProductScraper - Found 5 product cards on page
+22:42:12.151 [main] WARN  services.ProductScraper - No new products loaded after 3 attempts
+22:42:12.151 [main] INFO  services.ProductScraper - Total products collected: 5
+22:42:12.162 [main] INFO  utils.CSVWriter - CSV file created successfully: Search_Result.csv
+22:42:12.837 [main] INFO  tests.BaseTest - Browser closed
+22:42:13.239 [main] INFO  utils.DatabaseUtil - Database connection closed
+22:42:13.239 [main] INFO  tests.BaseTest - Test suite completed
