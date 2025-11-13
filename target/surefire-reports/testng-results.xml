@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-11T22:41:27 GMT+05:45" name="Hamrobazaar Test Suite" finished-at="2025-11-11T22:42:12 GMT+05:45" duration-ms="45579">
+  <suite started-at="2025-11-13T08:54:35 GMT+05:45" name="Hamrobazaar Test Suite" finished-at="2025-11-13T08:55:51 GMT+05:45" duration-ms="76116">
     <groups>
     </groups>
-    <test started-at="2025-11-11T22:41:27 GMT+05:45" name="Product Scraping Tests" finished-at="2025-11-11T22:42:12 GMT+05:45" duration-ms="45579">
+    <test started-at="2025-11-13T08:54:35 GMT+05:45" name="Product Scraping Tests" finished-at="2025-11-13T08:55:51 GMT+05:45" duration-ms="76116">
       <class name="tests.HamrobazaarTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-11T22:41:26 GMT+05:45" name="setupSuite" finished-at="2025-11-11T22:41:27 GMT+05:45" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-13T08:54:34 GMT+05:45" name="setupSuite" finished-at="2025-11-13T08:54:35 GMT+05:45" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-11T22:41:27 GMT+05:45" name="setup" finished-at="2025-11-11T22:41:30 GMT+05:45" duration-ms="3192" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-13T08:54:35 GMT+05:45" name="setup" finished-at="2025-11-13T08:54:37 GMT+05:45" duration-ms="2503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testScrapeMonitorProducts()[pri:1, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-11T22:41:30 GMT+05:45" name="testScrapeMonitorProducts" description="Extract Monitor products from Hamrobazaar" finished-at="2025-11-11T22:42:12 GMT+05:45" duration-ms="41678" status="PASS">
+        <test-method signature="testScrapeMonitorProducts()[pri:1, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-13T08:54:37 GMT+05:45" name="testScrapeMonitorProducts" description="Extract Monitor products from Hamrobazaar" finished-at="2025-11-13T08:55:50 GMT+05:45" duration-ms="73120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScrapeMonitorProducts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-11T22:42:12 GMT+05:45" name="tearDown" finished-at="2025-11-11T22:42:12 GMT+05:45" duration-ms="644" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-13T08:55:50 GMT+05:45" name="tearDown" finished-at="2025-11-13T08:55:51 GMT+05:45" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-11T22:42:12 GMT+05:45" name="tearDownSuite" finished-at="2025-11-11T22:42:13 GMT+05:45" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.HamrobazaarTest@2654635]" started-at="2025-11-13T08:55:51 GMT+05:45" name="tearDownSuite" finished-at="2025-11-13T08:55:51 GMT+05:45" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->

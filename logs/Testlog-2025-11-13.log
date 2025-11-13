@@ -1,0 +1,7 @@
+08:55:44.513 [main] INFO  services.ProductScraper - Collected 49/50: Gaming Monitor 144hz And 100hz
+08:55:47.738 [main] INFO  services.ProductScraper - Collected 50/50: Xiaomi-Monitor-A22i
+08:55:50.838 [main] INFO  services.ProductScraper - Done. Collected: 50
+08:55:50.838 [main] INFO  utils.CSVWriter - CSV file created successfully: Search_Result.csv
+08:55:50.869 [main] INFO  utils.CSVWriter - Product table displayed in console
+08:55:51.319 [main] INFO  tests.BaseTest - Browser closed
+08:55:51.574 [main] INFO  utils.DatabaseUtil - Database connection closed

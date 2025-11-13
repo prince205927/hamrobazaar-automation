@@ -1,5 +1,6 @@
 package utils;
 
+import com.aventstack.extentreports.Status;
 import models.ProductData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,8 +26,17 @@ public class CSVWriter {
             
             csvWriter.flush();
             logger.info("CSV file created successfully: {}", filename);
+            
+            if (ExtentManager.getTest() != null) {
+                ExtentManager.getTest().log(Status.PASS, "CSV file '" + filename + "' created successfully");
+            }
+            
         } catch (IOException e) {
             logger.error("Failed to write CSV file", e);
+            
+            if (ExtentManager.getTest() != null) {
+                ExtentManager.getTest().log(Status.FAIL, "Failed to create CSV file: " + e.getMessage());
+            }
         }
     }
     
@@ -55,6 +65,12 @@ public class CSVWriter {
                 truncate(product.sellerName, 20));
         }
         System.out.println("=".repeat(150));
+        
+        logger.info("Product table displayed in console");
+        
+        if (ExtentManager.getTest() != null) {
+            ExtentManager.getTest().log(Status.PASS, "Product table displayed in console");
+        }
     }
     
     private static String truncate(String value, int length) {

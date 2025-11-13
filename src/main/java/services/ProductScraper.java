@@ -57,12 +57,37 @@ public class ProductScraper {
 
     private ProductData extractProductData(WebElement product) {
         ProductData data = new ProductData();
-        try { data.title = product.findElement(By.cssSelector("h2.product-title")).getText(); } catch (Exception e) {}
-        try { data.description = product.findElement(By.cssSelector("p.description")).getText(); } catch (Exception e) {}
-        try { data.price = product.findElement(By.cssSelector("span.regularPrice")).getText(); } catch (Exception e) {}
-        try { data.condition = product.findElement(By.cssSelector("span.condition")).getText().replace("| ", "").trim(); } catch (Exception e) {}
-        try { data.postedDate = product.findElement(By.cssSelector("span.time")).getText(); } catch (Exception e) {}
-        try { data.sellerName = product.findElement(By.cssSelector("span.username-fullname")).getText(); } catch (Exception e) {}
+        try { 
+        	data.title = product.findElement(By.cssSelector("h2.product-title")).getText(); 
+        	} catch (Exception e) {
+        		
+        	}
+        try {
+        	data.description = product.findElement(By.cssSelector("p.description")).getText(); 
+        	} catch (Exception e) {
+        		
+        	}
+        try {
+        	 String rawPrice = product.findElement(By.cssSelector("span.regularPrice")).getText();
+        	    data.price = rawPrice.replace("रू.", "").trim();        	
+        	} catch (Exception e) {
+        		
+        	}
+        try { 
+        	data.condition = product.findElement(By.cssSelector("span.condition")).getText().replace("| ", "").trim(); 
+        	} catch (Exception e) {
+        		
+        	}
+        try {
+        	data.postedDate = product.findElement(By.cssSelector("span.time")).getText();
+        	} catch (Exception e) {
+        		
+        	}
+        try { 
+        	data.sellerName = product.findElement(By.cssSelector("span.username-fullname")).getText();
+        	} catch (Exception e) {
+        		
+        	}
         return data;
     }
     
